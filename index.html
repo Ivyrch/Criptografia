@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel ="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+  <h3> Codificador e Decodificador</h3>
+    <form> 
+      Escolha o tipo de codificação que você quer utilizar: <br><br>
+        <div class= "botoes">
+          
+            <input class="escolha" type="radio" id="cesar" name="tipo-de-decodificador" value="cifra-de-cesar" onclick="perguntarSalto()">
+                
+            <label for="cesar">Cifra de Cesar</label>
+          </div>
+          
+          <div class= "botoes">
+            <input class="escolha" type="radio" id="base-64" name="tipo-de-decodificador" value="base-64" onclick="perguntarSalto()">
+            <label for="base-64">Base 64 </label>
+          </div>
+          <br>
+          <br>
+         
+          <textarea id="areatexto" name="plaintext" placeholder="digite seu texto aqui">Digite seu texto aqui 
+
+          </textarea>
+        
+        
+        </div>
+     <div class ="opcao">  
+     </div>
+
+     <div class ="retorno">
+    
+      </div>
+
+     
+      
+
+    </form>
+
+
+
+
+    <script src="./index.js"></script>
+</body>
+</html>
