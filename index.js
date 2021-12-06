@@ -113,7 +113,7 @@ function codificaCesar(str,chave) {
     }else if(code >= 97 && code <= 122) { 
       arrNovo.push(String.fromCharCode(((code - 97 + chave)% 26)+97))
     }else{ 
-      str[i]
+      arrNovo.push(str[i])
     }
   }
  return arrNovo.join ('')
@@ -133,7 +133,7 @@ function decodificaCesar(str,chave) {
       arrNovo.push(String.fromCharCode(((code - 122 - chave)% 26)+122))
     
     }else{ 
-      str[i]
+      arrNovo.push(str[i])
     }
   }
  return arrNovo.join ('')
